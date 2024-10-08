@@ -3,14 +3,22 @@
 
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
       linktree
     </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
 
     <style>
+      /*
       * {
         border: 1px red dashed;
-      }
+      }*/
+
       html {
   min-height: 100%;
 }
@@ -19,11 +27,13 @@
         padding-top: 40px;
         padding-bottom: 40px;
         background: linear-gradient(90deg, #03005b, #092277, #164092, #285faa, #3f7ec1, #5a9ed6, #7abeeb, #9ddeff); 
-        color: rgba(255, 255, 255, 1.0);
+        color: rgb(220, 231, 255);
+        font-family: "Inter";
       }
 
       a {
-  color: rgba(255, 255, 255, 1.0);
+  color: rgb(255, 220, 220);
+  text-decoration: none;
 }
       .avatar-image {
         width: 128px;
@@ -41,12 +51,40 @@
 }
 
 .item {
-  background-color: rgba(149, 123, 173, 0.5);
+  background-color: rgb(103, 104, 209);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 1000px;
+  padding: 5px;
+  padding-right: 53px;
+  box-shadow: 4px 4px 10px 0px rgba(122,32,122,0.5);
 }
 .main-container {
-  width: 640px;
   margin: auto;
   max-width: 640px;
+}
+.image-row {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.name-row {
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "Big Shoulders Stencil Display";
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.social-icons-row {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.link-text {
+  text-align: center;
+  flex-grow: 1;
 }
 
     </style>
@@ -56,31 +94,28 @@
   
       <div class="main-container">
       <div class="image-row">
-        <img class="avatar-image" src="/thumbnails/images.jpeg" alt="CM logo">
+        <img class="avatar-image" src="/thumbnails/images-6.jpeg" alt="CM logo">
       </div>
     
     <div class="name-row">
-      CM 
+      C M 
     </div>
 
       <div class="social-icons-row">
-      <a href="https://github.com/modulogic" 
-      target= "_blank">
-      Github
+      <a href="https://github.com/modulogic" target= "_blank">
+      <i class="fa-brands fa-github"></i> 
     </a>
 
-    <a href="https://linkedin.com/carlomodulo/" target="_blank">
-      linkedin
+    <a href="https://www.linkedin.com/in/carlo-modulo-40977b232?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+    <i class="fa-brands fa-linkedin-in"></i> 
     </a>
 
-    <a href="https://applemusic.com/carlomodulo"
-     target="_blank">
-      apple music
+    <a href="https://music.apple.com/profile/carlomodulo"
+     target="_blank"><i class="fa-solid fa-record-vinyl"></i>
     </a>
 
-    <a href="https://instagram.com/carlomodulo"
-     target="_blank">
-      instagram
+    <a href="https://instagram.com/carlomodulo_"
+     target="_blank"><i class="fa-brands fa-instagram"></i>
     </a>
   </div>
 
@@ -88,7 +123,7 @@
 <div class="item">
   <img class="thumbnail" src="/thumbnails/IMG_0842.JPG">
 
-  <a target="_blank"
+  <a class="link-text" target="_blank"
   href="https://www.wantedinrome.com">
 Wanted In Rome
 </a>
@@ -97,8 +132,8 @@ Wanted In Rome
 <div class="item">
   <img class="thumbnail" src="/thumbnails/IMG_0836.PNG">
 
-    <a target="_blank"
-    href="https://http://www.paulgraham.com/makersschedule.html">
+    <a class="link-text" target="_blank"
+    href="https://www.paulgraham.com/makersschedule.html">
     Maker’s Schedule, Manager’s Schedule
   </a>
 </div>
@@ -106,7 +141,7 @@ Wanted In Rome
 <div class="item">
   <img class="thumbnail" src="/thumbnails/IMG_0837.JPG">
 
-    <a target="_blank"
+    <a class="link-text" target="_blank"
     href="https://www.theuselessweb.com/">
     The Useless Web
   </a>
@@ -115,32 +150,32 @@ Wanted In Rome
 <div class="item">
   <img class="thumbnail" src="/thumbnails/unnamed.png">
 
-    <a target="_blank"
+    <a class="link-text" target="_blank"
     href="https://littlealchemy2.com/">
-    littlealchemy2
+    Little Alchemy 2
   </a>
 </div>
 
 <div class="item">
   <img class="thumbnail" src="/thumbnails/water.png">
 
-    <a target="_blank"
+    <a class="link-text" target="_blank"
     href="https://asoftmurmur.com/">
     A Soft Murmur
   </a>
 </div>
 
 <div class="item">
-  <img class="thumbnail" src="/thumbnails/IMG_0841.JPG">
-    <a target="_blank"
+  <img class="thumbnail" src="/thumbnails/images-5.jpeg">
+    <a class="link-text" target="_blank"
     href="https://www.topgear.com/car-news/big-reads/ferrari-modulo-reborn-worlds-wedgiest-car-comes-life">
-    Ferrari modulo
+    Ferrari Modulo
   </a>
 </div>
 
 <div class="item">
   <img class="thumbnail" src="/thumbnails/2021-inter-milan-new-logo-design.png">
-    <a target="_blank"
+    <a class="link-text" target="_blank"
     href="https://www.inter.it/en">
         FC Internazionale Milano
       </a>
